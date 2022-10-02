@@ -8,5 +8,13 @@
 #
 # t.me/SharingUserbot & t.me/Lunatic0de
 
-# start
-python3 -m neehproject
+_starter () {
+    echo "Downloading source code"
+    git clone https://github.com/Neehh/Vanostra-Userbot
+    cd Vanostra-Userbot/ && rm -rf .git
+    python3 ../updater.py ../requirements.txt requirements.txt
+    echo "Vanostra-Userbot v0.2.0, Copyright © 2022 (Neehh) <https://github.com/Neehh>"
+    python3 -m neehproject
+}
+
+_starter
