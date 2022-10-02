@@ -1,1 +1,1 @@
-worker: python3 -m neehproject
+worker: bash start
