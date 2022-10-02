@@ -5,7 +5,7 @@ from uvloop import install
 
 from config import BOT_VER, CMD_HANDLER
 from neehproject import BOTLOG_CHATID, LOGGER, LOOP, aiosession, bot1, bots
-from neehproject.helpers.misc import create_botlog, heroku
+from neehproject.helpers.misc import create_botlog, git, heroku
 
 MSG_ON = """
 🔥 **Hiroshi-Userbot Berhasil Di Aktifkan**
@@ -54,5 +54,6 @@ async def main():
 if __name__ == "__main__":
     LOGGER("neehproject").info("Starting Hiroshi-Userbot")
     install()
+    git()
     heroku()
     LOOP.run_until_complete(main())
