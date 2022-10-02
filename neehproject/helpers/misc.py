@@ -1,3 +1,12 @@
+# 
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+#
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+#
+# All rights reserved.
+
 import asyncio
 import shlex
 import socket
@@ -119,7 +128,7 @@ async def create_botlog(client):
     LOGGER("neehproject").info(
         "TUNGGU SEBENTAR. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA"
     )
-    desc = "Group Log untuk Neehh-UserBot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n✨ Powered By ~ @hiroosupport ✨"
+    desc = "Group Log untuk Hiroshi-UserBot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n✨ Powered By ~ @hiroxsupport ✨"
     try:
         gruplog = await client.create_supergroup("Log UserBot", desc)
         if await in_heroku():
