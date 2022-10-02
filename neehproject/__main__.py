@@ -17,8 +17,6 @@ MSG_ON = """
 
 
 async def main():
-    for all_module in ALL_MODULES:
-        importlib.import_module(f"neehproject.modules.{all_module}")
     for bot in bots:
         try:
             await bot.start()
