@@ -6,7 +6,6 @@ from uvloop import install
 from config import BOT_VER, CMD_HANDLER
 from neehproject import BOTLOG_CHATID, LOGGER, LOOP, aiosession, bot1, bots
 from neehproject.helpers.misc import create_botlog, heroku
-from neehproject.modules import ALL_MODULES
 
 MSG_ON = """
 🔥 **Hiroshi-Userbot Berhasil Di Aktifkan**
