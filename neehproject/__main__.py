@@ -22,7 +22,7 @@ async def main():
             await bot.start()
             bot.me = await bot.get_me()
             await bot.join_chat("validc0de")
-            await bot.join_chat("hiroxsupport")
+            await bot.join_chat("pintarsupport")
             try:
                 await bot.send_message(
                     BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER)
@@ -40,7 +40,7 @@ async def main():
     if bot1 and str(BOTLOG_CHATID).startswith("-100"):
         bot1.me = await bot1.get_me()
         chat = await bot1.get_chat(BOTLOG_CHATID)
-        desc = "Group Log untuk Neeh-UserBot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n✨ Powered By ~ @hiroxsupport ✨"
+        desc = "Group Log untuk Hiroshi-UserBot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n✨ Powered By ~ @projectspintar ✨"
         lolo = f"LOGS | FOR {bot1.me.first_name}"
         if chat.description != desc:
             await bot1.set_chat_description(BOTLOG_CHATID, desc)
